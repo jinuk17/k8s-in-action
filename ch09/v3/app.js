@@ -15,3 +15,6 @@ var handler = function (request, response) {
   response.writeHead(200);
   response.end("This is jayden.17's v3 running in pod " + os.hostname() + "\n");
 };
+
+var www = http.createServer(handler);
+www.listen(8080);
